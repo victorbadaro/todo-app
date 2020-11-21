@@ -6,12 +6,65 @@
 }
 
 body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #333;
+    background-color: #261E49;
     color: #fff;
 }
 
-h1 {
-    padding: 8px 24px;
-    background-color: green;
+.todos {
+    padding: 8px;
+    border-radius: 4px;
+    border: 2px solid #FF3E00;
+}
+
+.todos input {
+    background-color: transparent;
+    border-bottom: 2px solid #331FAB;
+    outline: 0;
+}
+
+.todos button {
+    outline: 0;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #331FAB;
+    transition: background-color 200ms, color 200ms;
+}
+
+.todos button:hover {
+    background-color: #331FAB;
+    color: #261E49;
+}
+
+.todos button i {
+    display: block;
+}
+
+.insta {
+    padding: 2px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom left, #C42E91, #F99B4A);
+    transition: 200ms;
+}
+
+.insta:hover {
+    transform: rotate(180deg);
+}
+
+.insta-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #261E49;
 }
